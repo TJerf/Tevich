@@ -325,7 +325,7 @@ button *{
 }
 
 .streams-container-streams .stream {
-    width: 20rem;
+    width: 19%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -333,11 +333,11 @@ button *{
 }
 
 .stream .stream-card-container {
-    height: 12rem;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: url(assets/DudeIcon.svg);
+    background-image: url(assets/ghorbanzadee.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -357,29 +357,30 @@ button *{
     background-color: var(--overlay-color);
     color: var(--white-color);
     width: fit-content;
+    padding: 0 0.4rem;
     margin: 0.5rem;
 }
 
 
 .stream .stream-info-container {
-    height: 6rem;
+    height: 30%;
     display: flex;
     justify-content: space-between;
 }
 
 .stream-info-container .stream-icon {
-    width: 3rem;
+    width: 15%;
     height: 100%;
 }
 
 .stream-info-container .stream-icon img {
-    width: 3rem;
+    width: 100%;
     height: 3rem;
     border-radius: var(--border-radius-rounded);
 }
 
 .stream-info-container .stream-info {
-    width: 16rem;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;

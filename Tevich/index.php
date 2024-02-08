@@ -62,7 +62,7 @@
                         echo(
                             "<a href=''>
                                 <div class='side-nav-stream-icon'>
-                                    <img src='assets/DudeIcon.svg' alt=''>
+                                    <img src='assets/ghorbanzadee.jpg' alt=''>
                                 </div>
                                 <div class='side-nav-stream-info'>
                                     <p title='the dude'>the dude</p>
@@ -97,7 +97,7 @@
                                         </a>
                                         <div class="stream-info-container">
                                             <div class="stream-icon">
-                                                <img src="assets/DudeIcon.svg" alt="">
+                                                <img src="assets/ghorbanzadee.jpg" alt="">
                                             </div>
                                             <div class="stream-info">
                                                 <a title="the title" class="stream-title" href="">the title</a>
@@ -129,7 +129,7 @@
                                         </a>
                                         <div class="stream-info-container">
                                             <div class="stream-icon">
-                                                <img src="assets/DudeIcon.svg" alt="">
+                                                <img src="assets/ghorbanzadee.jpg" alt="">
                                             </div>
                                             <div class="stream-info">
                                                 <a title="the title" class="stream-title" href="">the title</a>
@@ -167,4 +167,3 @@
 </body>
 <script src="app.js"></script>
 </html>
-<!-- wlkadlka -->
