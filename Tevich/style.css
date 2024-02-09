@@ -442,3 +442,16 @@ button *{
     color: var(--link-purple-color);
     fill: var(--link-purple-color);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--black-header-color);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: var(--ashy-color);
+    border-radius: var(--border-radius-rounded);
+}
