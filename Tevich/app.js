@@ -2,7 +2,7 @@ const showMoreBtn = document.getElementById("show-more-btn");
 let showMoreContainer = document.getElementById("show-more-container"); 
 let streamsSecRow = document.getElementById("streams-sec-row"); 
 const sliderContainer = document.querySelector('.slider-container');
-const sliderControlsContainer = document.querySelector('.main-slider-control');
+const sliderControlsContainer = document.querySelector('.main-slider');
 const sliderControls = ['previous','next'];
 const sliderItems = document.querySelectorAll('.main-slider-slide');
 
@@ -39,8 +39,8 @@ class Carousel {
 
     setControls(){
         this.carouselControls.forEach(control => {
-            sliderControlsContainer.appendChild(document.createElement('button')).className = `slider-controls-${control}`;
-            document.querySelector(`.slider-controls-${control}`).innerHTML = control;
+            // sliderControlsContainer.appendChild(document.createElement('button')).className = `slider-controls-${control}`;
+            // document.querySelector(`.slider-controls-${control}`).innerHTML = control;
         });
     }
 

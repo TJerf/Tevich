@@ -47,7 +47,7 @@
     <div class="main-container">
         <nav class="side-nav">
             <div class="side-nav-title-container">
-                <h2>RECOMMENDED streamS</h2>
+                <h2>RECOMMENDED CHANNELS</h2>
                 <button>
                     <svg width="100%" height="100%" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" aria-hidden="true" focusable="false" class="ScIconSVG-sc-1q25cff-1 jpczqG">
                         <g>
@@ -80,6 +80,13 @@
         </nav>
         <main class="twilight-main">
             <div class="main-slider">
+                <button class="slider-controls-previous">
+                <svg width="30px" height="30px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" aria-hidden="true" focusable="false" class="ScIconSVG-sc-1q25cff-1 jpczqG">
+                    <g>
+                        <path d="M13.5 14.5L9 10l4.5-4.5L12 4l-6 6 6 6 1.5-1.5z"></path>
+                    </g>
+                </svg>
+                </button>
                 <div class="slider-container">
                     <img class="main-slider-slide main-slider-slide-1" data-index="1" src="assets/deyfi.jpg" alt="">
                     <img class="main-slider-slide main-slider-slide-2" data-index="2" src="assets/falshid.jpg" alt="">
@@ -87,7 +94,13 @@
                     <img class="main-slider-slide main-slider-slide-4" data-index="4" src="assets/windows7_bg.jpg" alt="">
                     <img class="main-slider-slide main-slider-slide-5" data-index="5" src="assets/ghorbanzadee.jpg" alt="">
                 </div>
-                <div class="main-slider-control"></div>
+                <button class="slider-controls-next">
+                <svg width="30px" height="30px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" aria-hidden="true" focusable="false" class="ScIconSVG-sc-1q25cff-1 jpczqG">
+                    <g>
+                        <path d="M6.5 5.5L11 10l-4.5 4.5L8 16l6-6-6-6-1.5 1.5z"></path>
+                    </g>
+                </svg>
+                </button>
             </div>
             <div class="main-streams-container">
                 <div class="streams-container">
