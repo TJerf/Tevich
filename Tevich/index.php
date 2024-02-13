@@ -79,7 +79,16 @@
             </div>
         </nav>
         <main class="twilight-main">
-            <div class="main-slider"></div>
+            <div class="main-slider">
+                <div class="slider-container">
+                    <img class="main-slider-slide main-slider-slide-1" data-index="1" src="assets/deyfi.jpg" alt="">
+                    <img class="main-slider-slide main-slider-slide-2" data-index="2" src="assets/falshid.jpg" alt="">
+                    <img class="main-slider-slide main-slider-slide-3" data-index="3" src="assets/gol_baray_gol.jpg" alt="">
+                    <img class="main-slider-slide main-slider-slide-4" data-index="4" src="assets/windows7_bg.jpg" alt="">
+                    <img class="main-slider-slide main-slider-slide-5" data-index="5" src="assets/ghorbanzadee.jpg" alt="">
+                </div>
+                <div class="main-slider-control"></div>
+            </div>
             <div class="main-streams-container">
                 <div class="streams-container">
                     <div class="streams-container-title">
