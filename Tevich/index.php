@@ -88,11 +88,18 @@
                 </svg>
                 </button>
                 <div class="slider-container">
-                    <img class="main-slider-slide main-slider-slide-1" data-index="1" src="assets/deyfi.jpg" alt="">
-                    <img class="main-slider-slide main-slider-slide-2" data-index="2" src="assets/falshid.jpg" alt="">
-                    <img class="main-slider-slide main-slider-slide-3" data-index="3" src="assets/gol_baray_gol.jpg" alt="">
-                    <img class="main-slider-slide main-slider-slide-4" data-index="4" src="assets/windows7_bg.jpg" alt="">
-                    <img class="main-slider-slide main-slider-slide-5" data-index="5" src="assets/ghorbanzadee.jpg" alt="">
+                    <?php
+                        $link = mysqli_connect("localhost","root","","tevich");
+                        if (mysqli_connect_errno())
+                            exit("khata!!!". mysqli_connect_error());
+                        $query = "SELECT * FROM `image`";
+                        $data = mysqli_query($link, $query);
+                        for ($i=1; $i <= 5; $i++) { 
+                            $image = mysqli_fetch_array($data);
+                            echo("<img class='main-slider-slide main-slider-slide-$i' data-index='$i' src='{$image['url']}' alt=''>");
+                        }
+                        mysqli_close($link);
+                    ?>
                 </div>
                 <button class="slider-controls-next">
                 <svg width="30px" height="30px" version="1.1" viewBox="0 0 20 20" x="0px" y="0px" aria-hidden="true" focusable="false" class="ScIconSVG-sc-1q25cff-1 jpczqG">
