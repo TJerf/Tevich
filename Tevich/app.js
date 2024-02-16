@@ -5,6 +5,8 @@ const sliderContainer = document.querySelector('.slider-container');
 const sliderControlsContainer = document.querySelector('.main-slider');
 const sliderControls = ['previous','next'];
 const sliderItems = document.querySelectorAll('.main-slider-slide');
+const signupBtn = document.getElementById("signup-btn");
+const signupContainer = document.getElementById("signup-container");
 
 class Carousel {
 

@@ -26,12 +26,7 @@
             </svg>
           </button>
         </div>
-        <form
-          id="signup-form"
-          class="signup-form"
-          method="post"
-          action="signup.php"
-        >
+        <form id="signup-form" class="signup-form" method="post" action="signup.php">
           <div style="display: block" id="signup-step-1">
             <div class="signup-title">
               <svg width="24" height="28" viewBox="0 0 24 28">
@@ -458,20 +453,11 @@
               <p>Step 3 of 3</p>
             </div>
           </div>
-          <div
-            id="step-footer-3"
-            style="display: none"
-            class="login__nextstep-container"
-          >
+          <div id="step-footer-3" style="display: none" class="login__nextstep-container">
             <div class="back-btn">
               <button>Back</button>
             </div>
-            <button
-              id="next-step-btn"
-              type="submit"
-              style="width: 66px"
-              class="signup-nextstep-btn"
-            >
+            <button id="next-step-btn" type="submit" style="width: 66px" class="signup-nextstep-btn">
               Sign Up
             </button>
           </div>
@@ -484,13 +470,9 @@
             Next Step
           </button>
         </div>
-        <div
-          id="step-footer-2"
-          style="display: none"
-          class="login__nextstep-container"
-        >
+        <div id="step-footer-2" style="display: none" class="login__nextstep-container">
           <div class="back-btn">
-            <button>Back</button>
+            <button id="back-btn">Back</button>
           </div>
           <button id="next-step-btn" class="signup-nextstep-btn">
             Next Step
