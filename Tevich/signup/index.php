@@ -82,16 +82,6 @@
               </div>
               <div class="signup-phone-inputs">
                 <select name="country_code" id="">
-                  <option value="US">United States +1</option>
-                  <option value="CA">Canada +1</option>
-                  <option value="GB">United Kingdom +44</option>
-                  <option value="JP">Japan +81</option>
-                  <option value="IE">Ireland +353</option>
-                  <option value="DE">Germany +49</option>
-                  <option value="AT">Austria +43</option>
-                  <option value="CH">Switzerland +41</option>
-                  <option value="KR">South Korea +82</option>
-                  <option value="FR">France +33</option>
                   <option value="AF">Afghanistan +93</option>
                   <option value="AX">Aland Islands +358</option>
                   <option value="AL">Albania +355</option>
