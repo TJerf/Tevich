@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tevich</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup/style.css">
 </head>
 <body>
     <header class="header">
@@ -193,6 +194,10 @@
             </div>
         </main>
     </div>
+    <?php
+        include("signup/index.php")
+    ?>
 </body>
 <script src="app.js"></script>
+<script src="signup/app.js"></script>
 </html>

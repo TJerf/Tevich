@@ -1,4 +1,12 @@
-* {
+.signup-modal {
+  /* display: none; */
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.signup-modal * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -8,22 +16,14 @@
   text-decoration: none;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  position: relative;
-  width: 100%;
-}
-
-p {
+.signup-modal p {
   color: #efeff1;
   line-height: 2;
   font-weight: 600;
   font-size: 15px;
 }
 
-input {
+.signup-modal input {
   height: 30px;
   appearance: none;
   background-clip: padding-box;
@@ -40,19 +40,41 @@ input {
   cursor: text;
 }
 
-a {
+.signup-modal a {
   cursor: pointer;
 }
 
-button {
+.signup-modal button {
   cursor: pointer;
 }
 
-button * {
+.signup-modal button * {
   cursor: pointer;
+}
+
+.signup-modal .profile-icon-input {
+  height: auto;
+  width: 250px;
+  box-shadow: none;
+  padding-left: 0;
+  cursor: pointer;
+}
+
+.profile-icon-input::file-selector-button {
+  border: 2px solid #6c5ce7;
+  padding: .2em .4em;
+  border-radius: 5px;
+  background-color: #a29bfe;
+  transition: 1s;
+}
+
+.profile-icon-input::file-selector-button:hover {
+  background-color: #81ecec;
+  border: 2px solid #00cec9;
 }
 
 .signup-container {
+  position: relative;
   background-color: rgba(0, 0, 0, 0.85);
   align-items: flex-start;
   display: flex;
@@ -303,6 +325,6 @@ button * {
   width: 50px;
 }
 
-.welcome-msg{
+.welcome-msg {
   padding: 5px 30px 15px 30px;
 }

@@ -4,9 +4,33 @@ let signupStep3 = document.getElementById("signup-step-3");
 let stepFooter1 = document.getElementById("step-footer-1");
 let stepFooter2 = document.getElementById("step-footer-2");
 let stepFooter3 = document.getElementById("step-footer-3");
+let signupModal = document.getElementById("signup-modal");
 const buttons = document.getElementsByClassName("signup-nextstep-btn");
-const backBtn = document.getElementById("back-btn");
+const backBtns = document.querySelectorAll(".back-btn button");
+const closeBtn = document.getElementById("close-btn");
 
+function changeCurrentStep(step) {
+  if (step == 1) {
+    signupStep1.style.display = "block";
+    signupStep2.style.display = "none";
+    signupStep3.style.display = "none";
+    stepFooter1.style.display = "flex";
+    stepFooter2.style.display = "none";
+    stepFooter3.style.display = "none";
+  } else if (step == 2) {
+    signupStep1.style.display = "none";
+    signupStep2.style.display = "block";
+    signupStep3.style.display = "none";
+    stepFooter1.style.display = "none";
+    stepFooter2.style.display = "flex";
+    stepFooter3.style.display = "none";
+  } else if (step == 3) {
+    signupStep2.style.display = "none";
+    signupStep3.style.display = "block";
+    stepFooter2.style.display = "none";
+    stepFooter3.style.display = "flex";
+  }
+}
 
 let currentStep = 1;
 for (button of buttons) {
@@ -15,33 +39,21 @@ for (button of buttons) {
 
     if (currentStep > 3) currentStep = 1;
 
-    if (currentStep == 1) {
-      signupStep1.style.display = "block";
-      signupStep2.style.display = "none";
-      signupStep3.style.display = "none";
-      stepFooter1.style.display = "flex";
-      stepFooter2.style.display = "none";
-      stepFooter3.style.display = "none";
-    } else if (currentStep == 2) {
-      signupStep1.style.display = "none";
-      signupStep2.style.display = "block";
-      stepFooter1.style.display = "none";
-      stepFooter2.style.display = "flex";
-    } else if (currentStep == 3) {
-      signupStep2.style.display = "none";
-      signupStep3.style.display = "block";
-      stepFooter2.style.display = "none";
-      stepFooter3.style.display = "flex";
-    }
+    changeCurrentStep(currentStep);
   });
 }
 
-backBtn.addEventListener("click", ()=>{
-      signupStep1.style.display = "block";
-      signupStep2.style.display = "none";
-      signupStep3.style.display = "none";
-      stepFooter1.style.display = "flex";
-      stepFooter2.style.display = "none";
-      stepFooter3.style.display = "none";
-      console.log("yo");
+for (button of backBtns) {
+  button.addEventListener("click", () => {
+    currentStep--;
+
+    if (currentStep < 0) currentStep = 0;
+
+    changeCurrentStep(currentStep);
+  });
+}
+
+closeBtn.addEventListener("click", () => {
+  signupModal.style.display = "none";
+  enableScrolling();
 });
