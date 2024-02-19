@@ -33,14 +33,33 @@
             $username = $_POST['username'];
             $password = $_POST['password'];
             $birthdate = "{$_POST['birth_year']}-{$_POST['birth_month']}-{$_POST['birth_day']}";
+            $pp_filename = $_FILES["profile-picture"]["name"]; 
+            $tempname = $_FILES["profile-picture"]["tmp_name"];  
+            $folder = "UploadedFiles/".$pp_filename;
 
             if(isset($username) && !empty($username)) {
               $link = mysqli_connect("localhost","root","","tevich");
 
               if (mysqli_connect_errno())
                 exit("khata!!!". mysqli_connect_error());
+
+                if (move_uploaded_file($tempname, "../".$folder)) {
+
+                  $msg = "Image uploaded successfully";
+      
+                }else{
+      
+                  $msg = "Failed to upload image";
+                }
+
+              $image_query = "INSERT INTO `image` (`id`, `url`) VALUES (NULL, '$folder')";
+              $image_id_query = "SELECT * FROM `image` WHERE id = @@identity";
+
+              mysqli_query($link, $image_query);
+              $pp_id = mysqli_fetch_row(mysqli_query($link, $image_id_query))[0];
+              print_r($pp_id);
               
-              $query = "INSERT INTO `user` (`id`, `user_name`, `display_name`, `password`, `birth_date`, `created_time`, `view_count`, `broadcaster_type`, `profile_icon_id`, `offline_image_id`, `prefs id`, `description`) VALUES (NULL, '$username', '$username', '$password', '$birthdate', current_timestamp(), '0', 'N/A', '1', '1', '1', 'Hi I am $username')";
+              $query = "INSERT INTO `user` (`id`, `user_name`, `display_name`, `password`, `birth_date`, `created_time`, `view_count`, `broadcaster_type`, `profile_icon_id`, `offline_image_id`, `prefs id`, `description`) VALUES (NULL, '$username', '$username', '$password', '$birthdate', current_timestamp(), '0', 'N/A', '$pp_id', '$pp_id', '1', 'Hi I am $username')";
 
               if (mysqli_query($link, $query) === true) {
                 echo("<p>Welcome to Tevich, $username?!</p>");

@@ -58,6 +58,31 @@
                 </button>
             </div>
             <div class="side-nav-streams">
+
+                <?php
+                    $link = mysqli_connect("localhost","root","","tevich");
+                    if (mysqli_connect_errno())
+                        exit("khata!!!". mysqli_connect_error());
+                    $query = "SELECT * FROM `user` WHERE id = 30";
+                    $data = mysqli_query($link, $query);
+                    $user = mysqli_fetch_assoc($data);
+                    $pp_query = "SELECT url FROM `image` WHERE id = {$user["profile_icon_id"]}";
+                    $user_pp = mysqli_fetch_assoc(mysqli_query($link, $pp_query));
+                    echo("<a href=''>
+                        <div class='side-nav-stream-icon'>
+                            <img src='{$user_pp['url']}' alt=''>
+                        </div>
+                        <div class='side-nav-stream-info'>
+                            <p title='the dude'>the dude</p>
+                            <p title='the game'>the game</p>
+                        </div>
+                        <div class='side-nav-stream-viewers'>
+                            <div></div>
+                            <p>666K</p>
+                        </div>
+                    </a>");
+                    mysqli_close($link);
+                ?>
                 <?php
                     for ($i=0; $i < 6; $i++) { 
                         echo(

@@ -1,4 +1,3 @@
-<!-- Step1 -->
 <div class="signup-modal" id="signup-modal">
   <div class="signup-container">
     <div class="signup-box">
@@ -18,7 +17,7 @@
             </svg>
       </button>
       </div>
-      <form id="signup-form" class="signup-form" method="post" action="signup.php">
+      <form id="signup-form" class="signup-form" method="post" action="signup\signup.php" enctype="multipart/form-data">
       <div style="display: block" id="signup-step-1">
             <div class="signup-title">
               <svg width="24" height="28" viewBox="0 0 24 28">
