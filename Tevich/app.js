@@ -7,6 +7,7 @@ const sliderControls = ["previous", "next"];
 const sliderItems = document.querySelectorAll(".main-slider-slide");
 const signupBtn = document.getElementById("signup-btn");
 const signupContainer = document.getElementById("signup-container");
+const titleTag = document.title;
 
 function disableScrolling() {
   scrollX = window.scrollX;
@@ -86,4 +87,11 @@ showMoreBtn.addEventListener("click", () => {
 signupBtn.addEventListener("click", () => {
   signupModal.style.display = "block";
   disableScrolling();
+});
+
+window.addEventListener("blur", ()=>{
+  document.title = "salam!";
+});
+window.addEventListener("focus", ()=>{
+  document.title = titleTag;
 });

@@ -148,6 +148,10 @@ button *{
     margin: 0.6rem;
 }
 
+.user-mng-container .login-btn:hover {
+    box-shadow: rgba(231, 224, 224, 0.12) 0px 2px 4px 0px, rgba(204, 211, 214, 0.32) 0px 2px 16px 0px;
+}
+
 .user-mng-container .signup-btn {
     height: 2rem;
     border-radius: 0.4rem;
@@ -155,6 +159,10 @@ button *{
     background-color: var(--purple-color);
     width: 4.53rem;
     margin: 0.6rem;
+}
+
+.user-mng-container .signup-btn:hover {
+    box-shadow: rgba(231, 224, 224, 0.12) 0px 2px 4px 0px, rgba(204, 211, 214, 0.32) 0px 2px 16px 0px;
 }
 
 .user-mng-container .account-btn {
@@ -436,6 +444,7 @@ button *{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    box-shadow: rgba(231, 224, 224, 0.12) 0px 2px 4px 0px, rgba(204, 211, 214, 0.32) 0px 2px 16px 0px;
 }
 
 .stream-card-container .stream-live-icon {
