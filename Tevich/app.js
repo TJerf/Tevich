@@ -54,8 +54,6 @@ class Carousel {
 
   setControls() {
     this.carouselControls.forEach((control) => {
-      // sliderControlsContainer.appendChild(document.createElement('button')).className = `slider-controls-${control}`;
-      // document.querySelector(`.slider-controls-${control}`).innerHTML = control;
     });
   }
 

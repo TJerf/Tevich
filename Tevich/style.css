@@ -15,7 +15,7 @@
   --white-color: #efeff1;
   --black-main-page-color: #0e0e10;
   --black-header-color: #18181b;
-  --btn-purple-color: #9147ff;
+  --btn-purple-color: #772ce8;
   --link-purple-color: #bf94ff;
   --btn-gray-color: rgba(83, 83, 95, 0.38);
   --overlay-color: rgba(0, 0, 0, 0.6);
@@ -23,7 +23,7 @@
   --black-sidenav-color: #1f1f23;
   --red-color: #eb0400;
   --btn-gray-hover-color: rgba(83, 83, 95, 0.48);
-  --btn-purple-hover-color: #772ce8;
+  --btn-purple-hover-color: #9147ff;
   --border-input-focus-color: #a970ff;
   --ashy-color: #adadb8;
   --border-radius-rounded: 9000px;
@@ -91,6 +91,10 @@ button * {
 .tools-container .browse-icon {
   margin: 0.6rem;
   color: var(--white-color);
+}
+
+.tools-container .browse-icon:hover {
+  color: var(--link-purple-color);
 }
 
 .tools-container .more-btn {

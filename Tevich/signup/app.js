@@ -11,7 +11,7 @@ const closeBtn = document.getElementById("close-btn");
 
 function changeCurrentStep(step) {
   if (step == 1) {
-    signupStep1.style.display = "block";
+    signupStep1.style.display = "flex";
     signupStep2.style.display = "none";
     signupStep3.style.display = "none";
     stepFooter1.style.display = "flex";
@@ -19,14 +19,14 @@ function changeCurrentStep(step) {
     stepFooter3.style.display = "none";
   } else if (step == 2) {
     signupStep1.style.display = "none";
-    signupStep2.style.display = "block";
+    signupStep2.style.display = "flex";
     signupStep3.style.display = "none";
     stepFooter1.style.display = "none";
     stepFooter2.style.display = "flex";
     stepFooter3.style.display = "none";
   } else if (step == 3) {
     signupStep2.style.display = "none";
-    signupStep3.style.display = "block";
+    signupStep3.style.display = "flex";
     stepFooter2.style.display = "none";
     stepFooter3.style.display = "flex";
   }
