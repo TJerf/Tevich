@@ -131,10 +131,16 @@
                             for ($i=0; $i < 5; $i++) { 
                                 echo(
                                     '<article class="stream">
-                                        <a class="stream-card-container">
-                                            <p class="stream-live-icon">LIVE</p>
-                                            <p class="stream-viewers">666K viewers</p>
-                                        </a>
+                                        <div class="stream-card-container">
+                                            <div class="stream-card-edge-corner-left"></div>
+                                            <div class="stream-card-edge-corner-bottom"></div>
+                                            <div class="stream-card-edge-left"></div>
+                                            <div class="stream-card-edge-bottom"></div>
+                                            <a class="stream-card">
+                                                <p class="stream-live-icon">LIVE</p>
+                                                <p class="stream-viewers">666K viewers</p>
+                                            </a>
+                                        </div>
                                         <div class="stream-info-container">
                                             <div class="stream-icon">
                                                 <img src="assets/ghorbanzadee.jpg" alt="">
