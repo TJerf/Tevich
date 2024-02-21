@@ -13,30 +13,22 @@
           <div class="signup-title">
             <svg width="24" height="28" viewBox="0 0 24 28">
               <g fill-rule="evenodd">
-                <path
-                  d="M19 6v6h-2V6h2zm-7 0h2v6h-2V6zM5 0 0 5v18h6v5l5-5h4l9-9V0H5zm17 13-4 4h-4l-4 4v-4H6V2h16v11z"
-                ></path>
-                <path
-                  fill="#FFF"
-                  d="m18 17 4-4V2H6v15h4v4l4-4h4zM12 6h2v6h-2V6zm7 0h-2v6h2V6z"
-                ></path>
+                <path d="M19 6v6h-2V6h2zm-7 0h2v6h-2V6zM5 0 0 5v18h6v5l5-5h4l9-9V0H5zm17 13-4 4h-4l-4 4v-4H6V2h16v11z"></path>
+                <path fill="#FFF" d="m18 17 4-4V2H6v15h4v4l4-4h4zM12 6h2v6h-2V6zm7 0h-2v6h2V6z"></path>
               </g>
             </svg>
             <h4>Join Twitch today</h4>
           </div>
           <div class="signup-about">
-            <p>
-              Creating an account allows you to participate in chat, follow
-              your favorite channels, and broadcast from your own channel.
-            </p>
+            <p>Creating an account allows you to participate in chat, follow your favorite channels, and broadcast from your own channel.</p>
           </div>
           <div class="signup-username">
             <p>Username</p>
-            <input name="username" type="text" />
+            <input style="margin-left: 0" name="username" type="text" />
           </div>
           <div class="signup-pass">
             <p>Password</p>
-            <input name="password" type="text" />
+            <input style="margin-left: 0" name="password" type="text" />
           </div>
           <!-- <div class="profile-picture">
             <p>profile picture</p>
@@ -49,9 +41,7 @@
             <div class="login-btn">
               <button type="button" id="login-btn">Already a Twitch user? Log in</button>
             </div>
-            <button type="button" id="next-step-btn" class="signup-nextstep-btn">
-              Next Step
-            </button>
+            <button type="button" id="next-step-btn" class="signup-nextstep-btn">Next Step</button>
           </div>
         </div>
         <div style="display: none" class="signup-display" id="signup-step-2">
@@ -98,15 +88,11 @@
                 <option value="BM">Bermuda +1</option>
                 <option value="BT">Bhutan +975</option>
                 <option value="BO">Bolivia +591</option>
-                <option value="BQ">
-                  Bonaire, Saint Eustatius, and Saba +599
-                </option>
+                <option value="BQ">Bonaire, Saint Eustatius, and Saba +599</option>
                 <option value="BA">Bosnia and Herzegovina +387</option>
                 <option value="BW">Botswana +267</option>
                 <option value="BR">Brazil +55</option>
-                <option value="IO">
-                  British Indian Ocean Territory +246
-                </option>
+                <option value="IO">British Indian Ocean Territory +246</option>
                 <option value="VG">British Virgin Islands +1</option>
                 <option value="BN">Brunei +673</option>
                 <option value="BG">Bulgaria +359</option>
@@ -126,9 +112,7 @@
                 <option value="CO">Colombia +57</option>
                 <option value="KM">Comoros +269</option>
                 <option value="CG">Congo +242</option>
-                <option value="CD">
-                  Congo, The Democratic Republic of the +243
-                </option>
+                <option value="CD">Congo, The Democratic Republic of the +243</option>
                 <option value="CK">Cook Islands +682</option>
                 <option value="CR">Costa Rica +506</option>
                 <option value="HR">Croatia +385</option>
@@ -264,9 +248,7 @@
                 <option value="LC">Saint Lucia +1</option>
                 <option value="MF">Saint Martin +590</option>
                 <option value="PM">Saint Pierre and Miquelon +508</option>
-                <option value="VC">
-                  Saint Vincent and the Grenadines +1
-                </option>
+                <option value="VC">Saint Vincent and the Grenadines +1</option>
                 <option value="WS">Samoa +685</option>
                 <option value="SM">San Marino +378</option>
                 <option value="ST">Sao Tome and Principe +239</option>
@@ -327,9 +309,7 @@
               </select>
               <input name="phone_number" type="text" />
             </div>
-            <p class="signup-phone-about">
-              Providing a phone number helps improve security
-            </p>
+            <p class="signup-phone-about">Providing a phone number helps improve security</p>
           </div>
           <div class="signup-use-email">
             <button>
@@ -342,10 +322,7 @@
             </button>
           </div>
           <div class="signup-about" style="margin-top: 34px">
-            <p style="text-align: center">
-              Twitch may use your phone number to call or send text messages
-              with information regarding your account.
-            </p>
+            <p style="text-align: center">Twitch may use your phone number to call or send text messages with information regarding your account.</p>
           </div>
           <div class="signup-step">
             <p>Step 2 of 3</p>
@@ -354,9 +331,7 @@
             <div class="back-btn">
               <button type="button" id="back-btn">Back</button>
             </div>
-            <button type="button" id="next-step-btn" class="signup-nextstep-btn">
-              Next Step
-            </button>
+            <button type="button" id="next-step-btn" class="signup-nextstep-btn">Next Step</button>
           </div>
         </div>
         <div style="display: none" class="signup-display" id="signup-step-3">
@@ -389,22 +364,15 @@
                 <option value="11">November</option>
                 <option value="12">December</option>
               </select>
-              <input name="birth_day" style="width: 100px" type="text" placeholder="Day"/>
-              <input name="birth_year" style="width: 100px" type="text" placeholder="Year"/>
+              <input name="birth_day" style="width: 100px" type="text" placeholder="Day" />
+              <input name="birth_year" style="width: 100px" type="text" placeholder="Year" />
             </div>
-            <p class="signup-phone-about">
-              Please provide your date of birth so we know you are old enough
-              to have an account.
-            </p>
+            <p class="signup-phone-about">Please provide your date of birth so we know you are old enough to have an account.</p>
           </div>
           <div class="signup-about" style="margin-top: 61px">
             <p style="text-align: center">
               By clicking Sign Up, you are agreeing to Twitch's
-              <a href="">Terms of Service</a>, are acknowledging our
-              <a href="">Privacy Notice</a> and the
-              <a href=""
-                >EU, EEA &amp; UK Consumer Right of Withdrawal Information</a
-              >.
+              <a href="">Terms of Service</a>, are acknowledging our <a href="">Privacy Notice</a> and the <a href="">EU, EEA &amp; UK Consumer Right of Withdrawal Information</a>.
             </p>
           </div>
           <div class="signup-step">
@@ -414,9 +382,7 @@
             <div class="back-btn">
               <button type="button">Back</button>
             </div>
-            <button id="next-step-btn" type="submit" style="width: 66px" class="signup-nextstep-btn">
-              Sign Up
-            </button>
+            <button id="next-step-btn" type="submit" style="width: 66px" class="signup-nextstep-btn">Sign Up</button>
           </div>
         </div>
       </form>

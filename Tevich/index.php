@@ -6,6 +6,7 @@
     <title>Tevich</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="signup/style.css">
+    <link rel="stylesheet" href="login/style.css">
 </head>
 <body>
     <header class="header">
@@ -217,9 +218,11 @@
         </main>
     </div>
     <?php
-        include("signup/index.php")
+        include("signup/index.php");
+        include("login/index.php");
     ?>
 </body>
 <script src="app.js"></script>
 <script src="signup/app.js"></script>
+<script src="login/app.js"></script>
 </html>
